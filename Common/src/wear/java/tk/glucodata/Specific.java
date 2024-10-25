@@ -21,10 +21,13 @@
 
 package tk.glucodata;
 
-import android.app.Application;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.splashscreen.SplashScreen;
 
 class Specific {
-static void start(Application context) {
-	}
+static void start(Object context) { }
 
+static    void splash(AppCompatActivity act) {
+       SplashScreen.installSplashScreen(act);
+      }
 };
